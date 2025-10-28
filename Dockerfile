@@ -1,11 +1,15 @@
-# simple Dockerfile that uses official n8n image
+# Use official n8n image
 FROM n8nio/n8n:latest
 
-# timezone (optional)
+# Set timezone
 ENV GENERIC_TIMEZONE="Asia/Kuala_Lumpur"
 
-# expose port
+# Set working directory
+WORKDIR /home/node/.n8n
+
+# Expose default n8n port
 EXPOSE 5678
 
-# start n8n
+# Default command to run n8n
+ENTRYPOINT ["tini", "--"]
 CMD ["n8n", "start"]
