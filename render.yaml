@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: mrjel-automations
+    env: docker
+    plan: free
+    region: sg
+    branch: main
+    autoDeploy: true
