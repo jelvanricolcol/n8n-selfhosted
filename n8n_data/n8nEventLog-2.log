@@ -1,0 +1,4 @@
+{"__type":"$$EventMessageAudit","id":"6c7b148c-90e3-4305-82ed-44249ee838f8","ts":"2025-10-28T05:46:01.518+00:00","eventName":"n8n.audit.user.login.failed","message":"n8n.audit.user.login.failed","payload":{"authenticationMethod":"email","userEmail":"jelvanricolcolprivate@gmail.com","reason":"wrong credentials"}}
+{"__type":"$$EventMessageConfirm","confirm":"6c7b148c-90e3-4305-82ed-44249ee838f8","ts":"2025-10-28T05:46:01.519+00:00","source":{"id":"0","name":"eventBus"}}
+{"__type":"$$EventMessageAudit","id":"58aff0ba-7565-43f2-8dbf-1348c57982f0","ts":"2025-10-28T05:46:15.205+00:00","eventName":"n8n.audit.user.login.failed","message":"n8n.audit.user.login.failed","payload":{"authenticationMethod":"email","userEmail":"jelvanricolcolprivate@gmail.com","reason":"wrong credentials"}}
+{"__type":"$$EventMessageConfirm","confirm":"58aff0ba-7565-43f2-8dbf-1348c57982f0","ts":"2025-10-28T05:46:15.205+00:00","source":{"id":"0","name":"eventBus"}}

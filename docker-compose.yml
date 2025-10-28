@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    restart: always
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_INSTANCE_NAME=MR.Jel Automations
+      - GENERIC_TIMEZONE=Asia/Kuala_Lumpur
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=admin
+      - N8N_BASIC_AUTH_PASSWORD=Jbr@10151997
+      - N8N_HOST=n8n.local
+      - N8N_PORT=5678
+      - WEBHOOK_TUNNEL_URL=https://n8n.local
+      - NODE_ENV=production
+    volumes:
+      - ./n8n_data:/home/node/.n8n
+
